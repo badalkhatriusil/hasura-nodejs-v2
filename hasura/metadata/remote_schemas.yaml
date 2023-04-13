@@ -1,0 +1,6 @@
+- name: NODEJS_WEBHOOK
+  definition:
+    url: '{{NODEJS_WEBHOOK}}'
+    timeout_seconds: 60
+    customization: {}
+    forward_client_headers: true

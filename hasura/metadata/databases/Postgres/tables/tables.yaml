@@ -1,0 +1,6 @@
+- "!include public_gender.yaml"
+- "!include public_geography_columns.yaml"
+- "!include public_geometry_columns.yaml"
+- "!include public_spatial_ref_sys.yaml"
+- "!include public_user.yaml"
+- "!include public_user_tracking.yaml"

@@ -1,0 +1,1 @@
+INSERT INTO "public"."user_tracking"("location", "id", "user_id") VALUES ('{"type":"Point","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::4326"}},"coordinates":[23.0225,72.5714]}', E'10e4cf11-db65-436d-ba76-9ff4711ad7f2', E'aa0891a0-7b03-44a5-ba52-00329ce33938');

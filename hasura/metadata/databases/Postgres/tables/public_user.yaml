@@ -1,0 +1,48 @@
+table:
+  name: user
+  schema: public
+object_relationships:
+  - name: genderByGender
+    using:
+      foreign_key_constraint_on: gender
+array_relationships:
+  - name: user_trackings
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          name: user_tracking
+          schema: public
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - first_name
+        - gender
+        - last_name
+        - id
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - first_name
+        - gender
+        - last_name
+        - id
+      filter: {}
+      allow_aggregations: true
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - first_name
+        - gender
+        - last_name
+        - id
+      filter: {}
+      check: {}
+delete_permissions:
+  - role: user
+    permission:
+      filter: {}
